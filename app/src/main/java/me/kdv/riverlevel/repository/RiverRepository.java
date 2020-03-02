@@ -1,5 +1,6 @@
 package me.kdv.riverlevel.repository;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -100,13 +101,14 @@ public class RiverRepository {
         return riverArrayList;
     }
 
+    @SuppressLint("StaticFieldLeak")
     private class InsertRiverListTask extends AsyncTask<List<River>, Void, Void>{
 
         @Override
         protected Void doInBackground(List<River>... lists) {
+            database.riverDao().deleteAll();
             database.riverDao().insertRiverList(lists[0]);
             return null;
         }
     }
-
 }

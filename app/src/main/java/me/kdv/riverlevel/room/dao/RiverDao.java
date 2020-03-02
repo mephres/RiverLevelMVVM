@@ -1,6 +1,5 @@
 package me.kdv.riverlevel.room.dao;
 
-import androidx.lifecycle.MutableLiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -18,4 +17,6 @@ public interface RiverDao {
     @Query("SELECT * FROM River")
     List<River> getRiverList();
 
+    @Query("DELETE FROM River")
+    void deleteAll();
 }
