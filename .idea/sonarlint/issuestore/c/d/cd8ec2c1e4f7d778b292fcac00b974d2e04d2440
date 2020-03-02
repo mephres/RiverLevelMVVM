@@ -1,0 +1,7 @@
+
+“squid:S13194"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(şÅşßıÿÿÿÿ8ŠóŞˆ.
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÿŒÓŞˆ.
+csquid:UselessImportCheck"8Remove this unused import 'io.reactivex.SingleObserver'.(ÌÑ¿â8ÿŒÓŞˆ.
+osquid:UselessImportCheck"?Remove this unused import 'io.reactivex.schedulers.Schedulers'.(š‰¢úÿÿÿÿ8ÿŒÓŞˆ.
+`squid:UselessImportCheck"0Remove this unused import 'io.reactivex.Single'.(úÃ¶“øÿÿÿÿ8ÿŒÓŞˆ.
+ksquid:UselessImportCheck"@Remove this unused import 'io.reactivex.disposables.Disposable'.(¶µ¾®8ÿŒÓŞˆ.

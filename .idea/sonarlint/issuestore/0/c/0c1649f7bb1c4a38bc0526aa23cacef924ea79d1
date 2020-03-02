@@ -1,0 +1,7 @@
+
+tsquid:S1450"VRemove the "binding" field and declare it as a local variable in the relevant methods.(¶ÃÊ8ÉÖÏİˆ.
+{squid:S1450"XRemove the "viewModel" field and declare it as a local variable in the relevant methods.(¤´Æ¨şÿÿÿÿ8¼šÎİˆ.
+rsquid:UselessImportCheck"BRemove this unused import 'androidx.lifecycle.ViewModelProviders'.(ê· ºÿÿÿÿÿ8¼šÎİˆ.
+^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8«×İˆ.
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±8¼šÎİˆ.
+Psquid:S1068"-Remove this unused "viewModel" private field.(¤´Æ¨şÿÿÿÿ8¼šÎİˆ.

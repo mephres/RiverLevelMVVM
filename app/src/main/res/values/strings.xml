@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RiverLevel</string>
+    <string name="overflow_label">Выход на пойму, см</string>
+    <string name="water_level_label">Уровень воды, см</string>
+    <string name="water_temperature_label">Температура воды, С</string>
+    <string name="water_temperature_no_data">Нет данных</string>
+</resources>

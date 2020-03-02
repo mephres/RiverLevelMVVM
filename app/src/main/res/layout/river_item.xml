@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/equipCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    tools:ignore="ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/riverNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/riverStationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/riverNameTextView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/overflowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/overflowLabelTextView"
+            app:layout_constraintStart_toStartOf="@+id/waterTemperatureTextView"
+            app:layout_constraintTop_toTopOf="@+id/overflowLabelTextView" />
+
+        <TextView
+            android:id="@+id/waterLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/waterLevelLabelTextView"
+            app:layout_constraintStart_toStartOf="@+id/waterTemperatureTextView"
+            app:layout_constraintTop_toTopOf="@+id/waterLevelLabelTextView" />
+
+        <TextView
+            android:id="@+id/levelChangeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/waterLevelTextView"
+            app:layout_constraintStart_toEndOf="@+id/arrowImageView"
+            app:layout_constraintTop_toTopOf="@+id/waterLevelTextView" />
+
+        <TextView
+            android:id="@+id/waterTemperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/waterTemperatureLabelTextView"
+            app:layout_constraintStart_toEndOf="@+id/waterTemperatureLabelTextView"
+            app:layout_constraintTop_toTopOf="@+id/waterTemperatureLabelTextView" />
+
+        <TextView
+            android:id="@+id/overflowLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/overflow_label"
+            app:layout_constraintStart_toStartOf="@+id/riverNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/riverNameTextView" />
+
+        <TextView
+            android:id="@+id/waterLevelLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/water_level_label"
+            app:layout_constraintStart_toStartOf="@+id/overflowLabelTextView"
+            app:layout_constraintTop_toBottomOf="@+id/overflowLabelTextView" />
+
+        <TextView
+            android:id="@+id/waterTemperatureLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/water_temperature_label"
+            app:layout_constraintStart_toStartOf="@+id/waterLevelLabelTextView"
+            app:layout_constraintTop_toBottomOf="@+id/levelChangeTextView" />
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/waterLevelTextView"
+            app:layout_constraintStart_toEndOf="@+id/waterLevelTextView"
+            app:layout_constraintTop_toTopOf="@+id/waterLevelTextView"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
